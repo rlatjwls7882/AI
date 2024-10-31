@@ -49,15 +49,16 @@ pip install subprocess
 - eval_split_size가 0.5 미만이면 생기는 오류.
 - ModuleNotFoundError: No module named 'deepspeed'
   ```python
-  pip install wheel
+  pip install deepspeed
   ```
   - deepspeed note: This is an issue with the package mentioned above, not pip.
-    - 설치가 안되면 [직접설치](https://github.com/daswer123/deepspeed-windows/releases/download/12.6/deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl)
+    - 위 오류가 뜨면서 설치가 안되면 [직접설치](https://github.com/daswer123/deepspeed-windows/releases/download/12.6/deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl)
     - 다운로드 폴더에서 cmd 열고
       ```python
       pip install "deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl"
       ```
-        - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api' 
+        - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
+          - ???
 
 
 ## 2024-10-30 
