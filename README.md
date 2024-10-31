@@ -52,13 +52,16 @@ pip install subprocess
   pip install deepspeed
   ```
   - deepspeed note: This is an issue with the package mentioned above, not pip.
-    - 위 오류가 뜨면서 설치가 안되면 [직접설치](https://github.com/daswer123/deepspeed-windows/releases/download/12.6/deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl)
-    - 다운로드 폴더에서 cmd 열고
-      ```python
-      pip install "deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl"
-      ```
-        - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
-          - ???
+    ```python
+    pip install https://github.com/daswer123/deepspeed-windows/releases/download/13.1/deepspeed-0.13.1+cu118-cp310-cp310-win_amd64.whl
+    ```
+      - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
+        - 확인해본 결과 logger에서 log로 변수 이름이 변경되서 오류가 생김.
+        - c:\Users\{username}\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\distributed\elastic\agent\server\api.py에서 모든 logger를 log로 수정
+      - ImportError: cannot import name '_get_socket_with_port' from 'torch.distributed.elastic.agent.server.api'
+        - 현재  
+        - C:\Users\{username}\AppData\Local\Programs\Python\Python310\Lib\site-packages\deepspeed\elasticity\elastic_agent.py에서 _get_socket_with_port import 부분을 from torch.distributed.elastic.utils.distributed import get_free_port로 변경해봄.
+        - 그 결과 pytorch 2.2 버전으로 변경하라는 런타임 에러 발생.
 
 
 ## 2024-10-30 
