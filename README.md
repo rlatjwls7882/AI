@@ -23,7 +23,6 @@ pip install --upgrade onnxscript
 ```
 
 ### ffmpeg
-#### 제대로 깔리지 않으면 "FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다" 에러 발생
 #### [ffmpeg 프로그램 설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
 ``` python
 pip install ffmpeg-python
@@ -39,6 +38,14 @@ pip install tts mecab-python3 cutlet unidic-lite
 pip install coqui-tts
 pip install subprocess
 ```
+
+## 발견한 오류 목록
+#### FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
+- ffmpeg가 제대로 설치가 되지 않았거나, 파일경로가 올바르지 못한경우
+#### ModuleNotFoundError: No module named 'deepspeed'
+- 아직 해결못함(윈도우에서는 deepspeed를 사용 못한다는 것 같다)
+#### ailed to import transformers.models.gpt2.modeling_gpt2 because of the following error (look up to see its traceback)
+- 해결했었는데 까먹음
 
 ## 2024-10-30 
 #### wav 파일 20개로 파인튜닝으로 목소리 모델 제작하여 프로토타입 완성.
