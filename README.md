@@ -68,6 +68,7 @@ pip install librosa
        
 ## 2024-10-31
 #### deepspeed 라이브러리 설치vidia-smi # CUDA 버전 확인
+```
 nvcc --version # CUDA TOOLKIT 확인
 python -c "import torch; print(torch.cuda.is_available())" # False가 나오는 경우 자신의 NVIDIA가 지원하는 버전의 CUDA 설치.
 # 11.8 버전의 CUDA는 둘 중 한가지 방법으로 설치
