@@ -51,8 +51,13 @@ pip install subprocess
   ```python
   pip install wheel
   ```
-  - 설치가 안되면 [윈도우용 deepspeed 다운방법](https://github.com/microsoft/DeepSpeed/issues/4729)
-  - 아직 해결못함(윈도우에서는 deepspeed를 사용 못한다는 것 같다)
+  - deepspeed note: This is an issue with the package mentioned above, not pip.
+    - 설치가 안되면 [직접설치](https://github.com/daswer123/deepspeed-windows/releases/download/12.6/deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl)
+    - 다운로드 폴더에서 cmd 열고
+      ```python
+      pip install "deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl"
+      ```
+        - cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
 
 
 ## 2024-10-30 
