@@ -44,10 +44,12 @@ pip install subprocess
 - ffmpeg가 제대로 설치가 되지 않았거나, 파일경로가 올바르지 못한경우
 #### PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스할 수 없습니다.
 - num_loader_workers>0 이상인 경우 생기는 오류. 여러 일꾼이 한 파일을 수정하면서 생기는 오류
-#### ModuleNotFoundError: No module named 'deepspeed'
-- 아직 해결못함(윈도우에서는 deepspeed를 사용 못한다는 것 같다)
 #### ailed to import transformers.models.gpt2.modeling_gpt2 because of the following error (look up to see its traceback)
 - 해결했었는데 까먹음
+#### eval_split_size가 0.5 미만이면 생기는 오류.
+#### ModuleNotFoundError: No module named 'deepspeed'
+- 아직 해결못함(윈도우에서는 deepspeed를 사용 못한다는 것 같다)
+
 
 ## 2024-10-30 
 #### wav 파일 20개로 파인튜닝으로 목소리 모델 제작하여 프로토타입 완성.
