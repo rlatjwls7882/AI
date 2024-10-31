@@ -18,7 +18,7 @@ pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https
 ### numpy와 tensorflow
 ``` python
 pip install numpy==1.22.0
-# tensorflow는 버전 생각 안남
+# tensorflow는 설치했었는지 안했었는지 생각이 안남
 pip install --upgrade onnxscript
 ```
 
