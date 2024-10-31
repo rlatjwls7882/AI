@@ -3,7 +3,9 @@
 #### openAI 학습은 [여기](https://github.com/ered1228/AI_Frieren)에서 진행.
 
 ## 2024-10-30 
-#### wav 파일 20개로 파인튜닝하여 모델 제작하여 프로토타입 완성
+#### wav 파일 20개로 파인튜닝하여 모델 제작하여 프로토타입 완성.
+#### 학습시킨 파일이 20개밖에 되지 않아 목소리가 좀 이상했음. System Instructions가 잘 작성이 안되있어 답변이 좀 이상했음. 답변생성과 출력이 10초 이상 걸렸음
+#### Todo) 학습시킬 wav 파일 증가. System Instruction 수정. 답변 속도를 줄이기 위한 대책 마련.
 https://github.com/user-attachments/assets/e618babd-a6eb-4dc6-a093-fac75c9f66ca
 
 ## 2024-10-29
