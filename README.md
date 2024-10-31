@@ -57,7 +57,7 @@ pip install subprocess
       ```python
       pip install "deepspeed-0.12.6+cu121-cp310-cp310-win_amd64.whl"
       ```
-        - cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
+        - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api' 
 
 
 ## 2024-10-30 
