@@ -2,11 +2,43 @@
 #### [여기](https://sesang06.tistory.com/216)에서 기본적인 내용을 공부하고 템플릿을 복사해서 사용했다.
 #### GPT 학습은 [여기](https://github.com/ered1228/AI_Frieren)에서 진행.
 
+## 개인 설정
+#### 프로토타입을 만든 후 기억에 의존해 쓰는 거라 빠진게 있을 수 있고, 불필요한게 있을 수도 있습니다.
+#### [Python 3.10.0rc1](https://www.python.org/ftp/python/3.10.0/python-3.10.0rc1-amd64.exe)
+#### [pytorch가 gpu를 사용 가능한지 확인](https://like-grapejuice.tistory.com/401)
+``` python
+pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu118
+```
+
+### numpy와 tensorflow
+``` python
+pip install numpy==1.22.0
+# tensorflow는 버전 생각 안남
+pip install --upgrade onnxscript
+```
+
+### ffmpeg
+``` python
+pip install ffmpeg-python
+```
+#### [ffmpeg 프로그램 설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
+
+### 나머지
+``` python
+pip install -U openai-whisper
+pip install openai
+pip install pyaudio wave
+pip install pyaudio
+pip install tts mecab-python3 cutlet unidic-lite
+pip install coqui-tts
+pip install subprocess
+```
+
 ## 2024-10-30 
 #### wav 파일 20개로 파인튜닝으로 목소리 모델 제작하여 프로토타입 완성.
-#### 학습시킨 파일이 20개밖에 되지 않아 목소리가 좀 이상했음. System Instructions가 작성이 잘 안되어있어 답변이 좀 이상했음. 답변 생성과 출력이 10초 이상 걸렸음
+#### 학습시킨 파일이 20개밖에 되지 않아 목소리가 좀 이상했음. System Instructions가 작성이 잘 안되어있어 답변이 좀 이상했음. 답변 생성과 출력이 10초 이상 걸렸음.
 #### Todo) 학습시킬 wav 파일 증가. System Instructions 수정. 답변 속도를 줄이기 위한 대책 마련.
 https://github.com/user-attachments/assets/e618babd-a6eb-4dc6-a093-fac75c9f66ca
 
 ## 2024-10-29
-#### ChatGpt Pro가 종료됨에 따라 System instructions가 날아감. 3만원이나 하는 Pro를 다시 구매하고 싶진 않아 이번엔 OpenAI를 결제하여 새로 다시 쓰기 시작.
+#### ChatGpt Pro가 종료됨에 따라 지금까지 작성한 System instructions를 볼 수가 없게 됨. 3만원이나 하는 Pro를 다시 구매하고 싶진 않아 이번엔 OpenAI를 결제하여 새로 다시 쓰기 시작.
