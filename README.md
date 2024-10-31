@@ -1,5 +1,10 @@
-# AI
+## openAI API를 연결해 파인튜닝한 모델로 AI를 만들어보는 프로젝트
+#### [여기](https://sesang06.tistory.com/216)에서 기본적인 내용을 공부하고 템플릿을 복사해서 사용했다.
+#### openAI 학습은 [여기](https://github.com/ered1228/AI_Frieren)에서 진행.
 
-#### openAI API를 연결해 파인튜닝한 모델로 AI를 만들어보는 프로젝트
-#### [여기](https://sesang06.tistory.com/216)에서 기본적인 내용을 공부했다.
+## 2024-10-30 
+#### wav 파일 20개로 파인튜닝하여 모델 제작하여 프로토타입 완성
 https://github.com/user-attachments/assets/e618babd-a6eb-4dc6-a093-fac75c9f66ca
+
+## 2024-10-29
+#### chatGpt Pro가 종료됨에 따라 System instructions가 날아감. Pro를 다시 구매하고 싶진 않아 이번엔 OpenAI를 결재하여 새로 다시 쓰기 시작.
