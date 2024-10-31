@@ -1,6 +1,6 @@
 ## openAI API를 연결해 파인튜닝한 목소리 모델로 AI를 만들어보는 프로젝트
 #### [여기](https://sesang06.tistory.com/216)에서 기본적인 내용을 공부하고 템플릿을 복사해서 사용했습니다.
-#### GPT 학습은 [여기](https://github.com/ered1228/AI_Frieren)에서 진행하고 있습니다다.
+#### GPT 학습은 [여기](https://github.com/ered1228/AI_Frieren)에서 진행하고 있습니다.
 
 ## 개인 설정
 #### 프로토타입을 만든 후 기억에 의존해 쓰는 거라 빠진게 있을 수 있고, 불필요한게 있을 수도 있습니다.
