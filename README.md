@@ -4,8 +4,8 @@
 
 ## 개인 설정
 #### 프로토타입을 만든 후 기억에 의존해 쓰는 거라 빠진게 있을 수 있고, 불필요한게 있을 수도 있습니다.
-#### [Python 3.10.0rc1](https://www.python.org/ftp/python/3.10.0/python-3.10.0rc1-amd64.exe)
-#### [pytorch가 gpu를 사용 가능한지 확인](https://like-grapejuice.tistory.com/401)
+#### Python 3.10.0rc1버전 [설치](https://www.python.org/ftp/python/3.10.0/python-3.10.0rc1-amd64.exe)
+#### pytorch가 gpu를 사용 가능한지 [확인](https://like-grapejuice.tistory.com/401)
 ``` python
 nvidia-smi # CUDA 버전 확인
 nvcc --version # CUDA TOOLKIT 확인
