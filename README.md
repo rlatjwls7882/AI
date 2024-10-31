@@ -23,7 +23,7 @@ pip install --upgrade onnxscript
 ```
 
 ### ffmpeg
-#### [ffmpeg 프로그램 설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
+#### ffmpeg 프로그램 [설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
 ``` python
 pip install ffmpeg-python
 ```
