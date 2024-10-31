@@ -7,6 +7,11 @@
 #### [Python 3.10.0rc1](https://www.python.org/ftp/python/3.10.0/python-3.10.0rc1-amd64.exe)
 #### [pytorch가 gpu를 사용 가능한지 확인](https://like-grapejuice.tistory.com/401)
 ``` python
+nvidia-smi # CUDA 버전 확인
+nvcc --version # CUDA TOOLKIT 확인
+python -c "import torch; print(torch.cuda.is_available())" # False가 나오는 경우 자신의 NVIDIA가 지원하는 버전의 CUDA 설치.
+# NVIDIA가 CUDA 11.8버전을 지원하는 경우
+conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu118
 ```
 
@@ -18,6 +23,7 @@ pip install --upgrade onnxscript
 ```
 
 ### ffmpeg
+#### 제대로 깔리지 않으면 "FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다" 에러 발생
 #### [ffmpeg 프로그램 설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
 ``` python
 pip install ffmpeg-python
