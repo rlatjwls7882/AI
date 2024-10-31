@@ -10,7 +10,7 @@
 nvidia-smi # CUDA 버전 확인
 nvcc --version # CUDA TOOLKIT 확인
 python -c "import torch; print(torch.cuda.is_available())" # False가 나오는 경우 자신의 NVIDIA가 지원하는 버전의 CUDA 설치.
-# NVIDIA가 CUDA 11.8버전을 지원하는 경우
+# 11.8 버전의 CUDA는 둘 중 한가지 방법으로 설치
 conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu118
 ```
