@@ -37,6 +37,9 @@ pip install pyaudio
 pip install tts mecab-python3 cutlet unidic-lite
 pip install coqui-tts
 pip install subprocess
+pip install -U ultralytics
+pip install gruut
+pip install librosa
 ```
 
 ## 발견한 오류 목록
@@ -57,12 +60,14 @@ pip install subprocess
     ```
       - ImportError: cannot import name 'log' from 'torch.distributed.elastic.agent.server.api'
         - 확인해본 결과 logger에서 log로 변수 이름이 변경되서 오류가 생김.
-        - c:\Users\{username}\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\distributed\elastic\agent\server\api.py에서 모든 logger를 log로 수정
+        -  python_path\lib\site-packages\torch\distributed\elastic\agent\server\api.py에서 모든 logger를 log로 수정
       - ImportError: cannot import name '_get_socket_with_port' from 'torch.distributed.elastic.agent.server.api'
         - 현재  
-        - C:\Users\{username}\AppData\Local\Programs\Python\Python310\Lib\site-packages\deepspeed\elasticity\elastic_agent.py에서 _get_socket_with_port import 부분을 from torch.distributed.elastic.utils.distributed import get_free_port로 변경해봄.
+        -  python_path\Lib\site-packages\deepspeed\elasticity\elastic_agent.py에서 _get_socket_with_port import 부분을 from torch.distributed.elastic.utils.distributed import get_free_port로 변경해봄.
         - 그 결과 pytorch 2.2 버전으로 변경하라는 런타임 에러 발생.
-
+       
+## 2024-10-31
+#### tts를 생성할때 콘솔창에서 뜨던 FutureWarning 필터링.
 
 ## 2024-10-30 
 #### wav 파일 20개로 파인튜닝으로 목소리 모델 제작하여 프로토타입 완성.
