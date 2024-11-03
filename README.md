@@ -65,6 +65,7 @@ pip install librosa
         - 현재  
         -  python_path\Lib\site-packages\deepspeed\elasticity\elastic_agent.py에서 _get_socket_with_port import 부분을 from torch.distributed.elastic.utils.distributed import get_free_port로 변경해봄.
         - 그 결과 pytorch 2.2 버전으로 변경하라는 런타임 에러 발생.
+        - pytorch 다운그레이드 하면 다른 오류 발생 -> 처음부터 다시 설치해보기로 노선 변경
        
 ## 2024-10-31
 #### deepspeed 라이브러리 설치
