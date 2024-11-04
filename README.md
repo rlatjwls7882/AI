@@ -43,7 +43,7 @@ conda config --set channel_priority strict
 pip install TTS
 pip install coqui-tts
 pip install tts mecab-python3 cutlet unidic-lite
-pip install tensorflow[and-cuda]
+pip install tensorflow[and-cuda] # 실수로 설치함
 ```
 
 ## 발견한 오류 목록
