@@ -46,16 +46,21 @@ pip install subprocess # 이번엔 아직 설치 안함
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 pip install TTS
+pip install coqui-tts
+pip install tts mecab-python3 cutlet unidic-lite
 ```
 
 ## 발견한 오류 목록
 - FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
   - ffmpeg가 제대로 설치가 되지 않았거나, 파일경로가 올바르지 못한경우
 - PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스할 수 없습니다.
-  - num_loader_workers=0이 아닌 경우, 아나콘다같은 가상 환경에서 실행하지 않은 경우, OUTOFMEMORY인 경우
+  - num_loader_workers=0이 아닌 경우, OUTOFMEMORY인 경우, 아나콘다와 같은 가상환경에서 실행하지 않은 경우(아마도?)
 - ailed to import transformers.models.gpt2.modeling_gpt2 because of the following error (look up to see its traceback)
   - 해결했었는데 까먹음
-- eval_split_size가 0.5 미만이면 생기는 오류.
+- AssertionError:  [!] You do not have enough samples for the evaluation set. You can work around this setting the 'eval_split_size' parameter to a minimum of 0.05
+  - eval_split_size가 0.05 미만이면 생기는 오류.
+- AssertionError:  ❗ len(DataLoader) returns 0. Make sure your dataset is not empty or len(dataset) > 0.
+  - 해결했는데 왜 해결됐는지 모르겠음(아마 pip 순서에서 문제가 발생한것이 아닐까 의심중)
 - ModuleNotFoundError: No module named 'deepspeed'
   ```python
   pip install deepspeed
