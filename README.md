@@ -48,7 +48,7 @@ pip install tensorflow[and-cuda]
 
 ## 발견한 오류 목록
 - FileNotFoundError: [WinError 2] 지정된 파일을 찾을 수 없습니다
-  - ffmpeg가 제대로 설치가 되지 않았거나, 파일경로가 올바르지 못한경우
+  - ffmpeg가 제대로 설치가 되지 않았거나, 파일경로가 올바르지 못한경우, csv 파일 내에 포맷팅이 잘 되지 않은 경우, 바보같이 mp3파일로 소리를 저장한 경우 (난 바보였다)
 - PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스할 수 없습니다.
   - num_loader_workers=0이 아닌 경우, OUTOFMEMORY인 경우, 아나콘다와 같은 가상환경에서 실행하지 않은 경우(아마도?)
 - ailed to import transformers.models.gpt2.modeling_gpt2 because of the following error (look up to see its traceback)
