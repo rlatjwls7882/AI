@@ -12,11 +12,6 @@ python -c "import torch; print(torch.cuda.is_available())" # False가 나오는 
 pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu118 # CUDA 11.8 버전
 ```
 
-### numpy와 tensorflow // 이번엔 일단 스킵
-``` python
-# tensorflow는 설치했었는지 안했었는지 생각이 안남
-```
-
 ### ffmpeg
 #### ffmpeg 프로그램 [설치](https://onlytojay.medium.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-ffmpeg-a0f1b3fae819)
 ``` python
@@ -48,6 +43,7 @@ conda config --set channel_priority strict
 pip install TTS
 pip install coqui-tts
 pip install tts mecab-python3 cutlet unidic-lite
+pip install tensorflow[and-cuda]
 ```
 
 ## 발견한 오류 목록
