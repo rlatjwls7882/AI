@@ -79,6 +79,9 @@ pip install tts mecab-python3 cutlet unidic-lite
         - pytorch 다운그레이드 하면 다른 오류 발생 -> 처음부터 다시 설치해보기로 노선 변경
 
 ## 2024-11-03
+#### wav 파일 증가
+
+## 2024-11-03
 #### python 삭제하고 처음부터 다시 설치 시작
 
 ## 2024-10-31
